@@ -9,9 +9,15 @@ pythom -m venv .venv
 ``` bash
 pip install -r requirements.txt
 ```
-You need to run the `# 1. Get Data` cell from the notebook so as to get the data in the `data/` folder
-
-- run the `train.py` file
+- run `get_data.py` to download the data into the `data\` directory
+``` bash
+python get_data.py
+```
+- run the `train.py` file to train and save a TinyVGG model on the given dataset
 ``` bash
 python train.py
+```
+OR
+``` bash
+python train.py --train_dir TRAIN_DIR --test_dir TEST_DIR --learning_rate LEARNING_RATE --batch_size BATCH_SIZE --num_epochs NUM_EPOCHS 
 ```
