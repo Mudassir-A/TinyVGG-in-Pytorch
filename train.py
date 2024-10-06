@@ -43,7 +43,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--hidden_units",
-        default=10,
+        default=10,  # Change this to 10 to match the saved model
         type=int,
         help="number of hidden units in the model architecture",
     )
@@ -98,5 +98,5 @@ if __name__ == "__main__":
 
     # save the model with help from utils.py
     utils.save_model(
-        model=model, target_dir="models", model_name="going_modular_model.pth"
+        model=model, target_dir="models", model_name="tinyvgg_model.pth"
     )
