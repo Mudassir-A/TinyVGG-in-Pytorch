@@ -9,7 +9,7 @@ import torch
 
 from torchvision import transforms
 
-import data_setup, engine, model_builder, utils
+from scripts import data_setup, engine, model_builder, utils
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

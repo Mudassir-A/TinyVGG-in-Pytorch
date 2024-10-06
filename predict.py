@@ -2,7 +2,7 @@ import torch
 import torchvision
 import argparse
 
-import model_builder
+from scripts import model_builder
 
 # Creating a parser
 parser = argparse.ArgumentParser()

@@ -1,5 +1,6 @@
 import os
 import requests
+import argparse
 import zipfile
 from pathlib import Path
 
@@ -32,4 +33,7 @@ def download_data(path: str):
     
     
 if __name__ == "__main__":
-    download_data("data")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data_path", type=str, default="./data", help="path to save the data")
+    args = parser.parse_args()
+    download_data(args.data_path)
